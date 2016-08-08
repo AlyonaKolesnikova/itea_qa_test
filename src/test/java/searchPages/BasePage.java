@@ -6,9 +6,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * Created by shtrih on 08.08.16.
- */
 public class BasePage {
     public static WebDriver driver = new FirefoxDriver();
 
