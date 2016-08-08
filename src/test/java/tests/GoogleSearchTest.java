@@ -25,7 +25,7 @@ public class GoogleSearchTest {
         Assert.assertEquals(searchResult.NumberOfLinks(), numberOfLinksOnTheFirstPage, "Actual results are not equals numberOfLinksOnTheFirstPage");
         SearchResultPage2 searchResultPage2 = searchResult.clickOnTheNextPageButton();
         Assert.assertNotNull(searchResultPage2, "SearchPage2 is not loaded");
-        Assert.assertTrue(searchResultPage2.isSearchLinksContained(searchWord), "Each item from results list not contains searchTerm");
-        Assert.assertEquals(searchResultPage2.NumberOfLinksSecondPage(), numberOfLinksOnTheSecondtPage, "Actual results are not equals numberOfLinksOnTheFirstPage");
+        Assert.assertTrue(searchResultPage2.isSearchLinksContained(searchWord), "Each item from results list not contains searchWord");
+        Assert.assertEquals(searchResultPage2.NumberOfLinksSecondPage(), numberOfLinksOnTheSecondtPage, "Actual results are not equals numberOfLinksOnTheSecondPage");
     }
 }
